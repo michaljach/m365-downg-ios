@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		829703A322D7DD1300E7BCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829703A222D7DD1300E7BCE9 /* AppDelegate.swift */; };
-		829703A522D7DD1300E7BCE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829703A422D7DD1300E7BCE9 /* ViewController.swift */; };
 		829703A822D7DD1300E7BCE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829703A622D7DD1300E7BCE9 /* Main.storyboard */; };
 		829703AA22D7DD1400E7BCE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829703A922D7DD1400E7BCE9 /* Assets.xcassets */; };
 		829703AD22D7DD1400E7BCE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829703AB22D7DD1400E7BCE9 /* LaunchScreen.storyboard */; };
 		829703B822D7DD1500E7BCE9 /* m365_info_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829703B722D7DD1500E7BCE9 /* m365_info_iosTests.swift */; };
 		829703C322D7DD1500E7BCE9 /* m365_info_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829703C222D7DD1500E7BCE9 /* m365_info_iosUITests.swift */; };
+		829703D322D7DD9E00E7BCE9 /* M365Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829703D222D7DD9D00E7BCE9 /* M365Info.swift */; };
+		829703D522D7DDD800E7BCE9 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829703D422D7DDD800E7BCE9 /* MainTableViewController.swift */; };
+		829703D822D7DFF900E7BCE9 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829703D722D7DFF900E7BCE9 /* MainTableViewCell.swift */; };
+		82C4A84E22D8903500C75C3B /* DevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4A84D22D8903500C75C3B /* DevicesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		8297039F22D7DD1300E7BCE9 /* m365-info-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "m365-info-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		829703A222D7DD1300E7BCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		829703A422D7DD1300E7BCE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		829703A722D7DD1300E7BCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		829703A922D7DD1400E7BCE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		829703AC22D7DD1400E7BCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		829703BE22D7DD1500E7BCE9 /* m365-info-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "m365-info-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		829703C222D7DD1500E7BCE9 /* m365_info_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = m365_info_iosUITests.swift; sourceTree = "<group>"; };
 		829703C422D7DD1500E7BCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829703D222D7DD9D00E7BCE9 /* M365Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = M365Info.swift; path = "../../../m365-info/M365Info.swift"; sourceTree = "<group>"; };
+		829703D422D7DDD800E7BCE9 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		829703D722D7DFF900E7BCE9 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		82C4A84D22D8903500C75C3B /* DevicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		829703A122D7DD1300E7BCE9 /* m365-info-ios */ = {
 			isa = PBXGroup;
 			children = (
+				829703D622D7DFE900E7BCE9 /* Views */,
+				829703D122D7DD7300E7BCE9 /* Utils */,
+				829703D022D7DD4D00E7BCE9 /* Controllers */,
 				829703A222D7DD1300E7BCE9 /* AppDelegate.swift */,
-				829703A422D7DD1300E7BCE9 /* ViewController.swift */,
 				829703A622D7DD1300E7BCE9 /* Main.storyboard */,
 				829703A922D7DD1400E7BCE9 /* Assets.xcassets */,
 				829703AB22D7DD1400E7BCE9 /* LaunchScreen.storyboard */,
@@ -123,6 +131,31 @@
 				829703C422D7DD1500E7BCE9 /* Info.plist */,
 			);
 			path = "m365-info-iosUITests";
+			sourceTree = "<group>";
+		};
+		829703D022D7DD4D00E7BCE9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				829703D422D7DDD800E7BCE9 /* MainTableViewController.swift */,
+				82C4A84D22D8903500C75C3B /* DevicesTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		829703D122D7DD7300E7BCE9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				829703D222D7DD9D00E7BCE9 /* M365Info.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		829703D622D7DFE900E7BCE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				829703D722D7DFF900E7BCE9 /* MainTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829703A522D7DD1300E7BCE9 /* ViewController.swift in Sources */,
+				829703D522D7DDD800E7BCE9 /* MainTableViewController.swift in Sources */,
+				829703D322D7DD9E00E7BCE9 /* M365Info.swift in Sources */,
+				82C4A84E22D8903500C75C3B /* DevicesTableViewController.swift in Sources */,
+				829703D822D7DFF900E7BCE9 /* MainTableViewCell.swift in Sources */,
 				829703A322D7DD1300E7BCE9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
