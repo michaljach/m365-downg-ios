@@ -17,6 +17,8 @@ class MainTableViewController: UITableViewController {
         "Battery Level",
         "Body Temperature",
         "Total Mileage",
+        "Voltage",
+        "Current Speed",
     ]
 
     override func viewDidLoad() {
