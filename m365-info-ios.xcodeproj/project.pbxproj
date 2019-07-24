@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8213D56022E5B4AD005E8877 /* FlashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8213D55F22E5B4AD005E8877 /* FlashViewController.swift */; };
+		8232CECE22E5AC1D00B891EF /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232CECD22E5AC1D00B891EF /* DetailsTableViewCell.swift */; };
+		8295E0D322DD2AD900266F3F /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8295E0D222DD2AD900266F3F /* SwitchTableViewCell.swift */; };
 		829703A322D7DD1300E7BCE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829703A222D7DD1300E7BCE9 /* AppDelegate.swift */; };
 		829703A822D7DD1300E7BCE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829703A622D7DD1300E7BCE9 /* Main.storyboard */; };
 		829703AA22D7DD1400E7BCE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829703A922D7DD1400E7BCE9 /* Assets.xcassets */; };
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8213D55F22E5B4AD005E8877 /* FlashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashViewController.swift; sourceTree = "<group>"; };
+		822B92A622E5EFED006F4A54 /* m365-info-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "m365-info-ios.entitlements"; sourceTree = "<group>"; };
+		8232CECD22E5AC1D00B891EF /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		8295E0D222DD2AD900266F3F /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		8297039F22D7DD1300E7BCE9 /* m365-info-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "m365-info-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		829703A222D7DD1300E7BCE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		829703A722D7DD1300E7BCE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +110,7 @@
 		829703A122D7DD1300E7BCE9 /* m365-info-ios */ = {
 			isa = PBXGroup;
 			children = (
+				822B92A622E5EFED006F4A54 /* m365-info-ios.entitlements */,
 				829703D622D7DFE900E7BCE9 /* Views */,
 				829703D122D7DD7300E7BCE9 /* Utils */,
 				829703D022D7DD4D00E7BCE9 /* Controllers */,
@@ -136,8 +144,9 @@
 		829703D022D7DD4D00E7BCE9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				829703D422D7DDD800E7BCE9 /* MainTableViewController.swift */,
 				82C4A84D22D8903500C75C3B /* DevicesTableViewController.swift */,
+				829703D422D7DDD800E7BCE9 /* MainTableViewController.swift */,
+				8213D55F22E5B4AD005E8877 /* FlashViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				829703D722D7DFF900E7BCE9 /* MainTableViewCell.swift */,
+				8295E0D222DD2AD900266F3F /* SwitchTableViewCell.swift */,
+				8232CECD22E5AC1D00B891EF /* DetailsTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +237,11 @@
 				TargetAttributes = {
 					8297039E22D7DD1300E7BCE9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					829703B222D7DD1500E7BCE9 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -290,10 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				829703D522D7DDD800E7BCE9 /* MainTableViewController.swift in Sources */,
+				8213D56022E5B4AD005E8877 /* FlashViewController.swift in Sources */,
 				829703D322D7DD9E00E7BCE9 /* M365Info.swift in Sources */,
 				82C4A84E22D8903500C75C3B /* DevicesTableViewController.swift in Sources */,
 				829703D822D7DFF900E7BCE9 /* MainTableViewCell.swift in Sources */,
 				829703A322D7DD1300E7BCE9 /* AppDelegate.swift in Sources */,
+				8295E0D322DD2AD900266F3F /* SwitchTableViewCell.swift in Sources */,
+				8232CECE22E5AC1D00B891EF /* DetailsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "m365-info-ios/m365-info-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3S9MEDUS2Z;
 				INFOPLIST_FILE = "m365-info-ios/Info.plist";
@@ -486,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "m365-info-ios/m365-info-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3S9MEDUS2Z;
 				INFOPLIST_FILE = "m365-info-ios/Info.plist";

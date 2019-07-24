@@ -21,6 +21,10 @@ class DevicesTableViewController: UITableViewController {
         m365?.stateDelegate = self
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        m365?.disconnect()
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -59,8 +63,10 @@ extension DevicesTableViewController: M365StateDelegate {
 
 extension DevicesTableViewController: M365DevicesDelegate {
     func didDiscoverDevice(peripheral: CBPeripheral) {
-        devices.append(peripheral)
-        tableView.reloadData()
+        if peripheral.name != nil {
+            devices.append(peripheral)
+            tableView.reloadData()
+        }
     }
     
     func didConnect(peripheral: CBPeripheral) {
