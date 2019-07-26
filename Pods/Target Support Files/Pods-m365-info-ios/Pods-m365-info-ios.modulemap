@@ -1,0 +1,6 @@
+framework module Pods_m365_info_ios {
+  umbrella header "Pods-m365-info-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
